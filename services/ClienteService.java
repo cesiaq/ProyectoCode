@@ -3,14 +3,15 @@ package com.cqsrce.models.services;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.cqsrce.billing.model.dao.IClienteDao;
 import com.cqsrce.models.entities.Cliente;
 
 @Service
 public class ClienteService implements IClienteServices {
 
+	@Autowired
 	private IClienteDao clienteDao;
 	
 	@Override
